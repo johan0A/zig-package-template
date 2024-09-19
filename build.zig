@@ -33,7 +33,7 @@ pub fn build(b: *B) void {
             .optimize = optimize,
         });
 
-        const check = b.step("check", "Check if tests compiles");
+        const check = b.step("check", "Check if tests compile");
         check.dependOn(&tests_check.step);
     }
 }
